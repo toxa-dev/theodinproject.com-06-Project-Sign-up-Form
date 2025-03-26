@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Project: Sign-up Form</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <article class="page-wrapper">
+      <header class="main-header">
+        <figure>
+          <img
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+            alt="Odin project logo"
+          />
+          <figcaption>
+            <h1>ODIN</h1>
+          </figcaption>
+        </figure>
+      </header>
+
+      <main class="main-content">
+        <section class="intro-section">
+          <h2>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />
+            Sign Up <em>now</em> to get started. <br /><br />
+            You know you want to.
+          </h2>
+        </section>
+
+        <section class="signup-form">
+          <h3>Let's do this!</h3>
+          <form action="#" method="POST">
+            <div class="text-fields">
+              <div>
+                <label for="first-name">First name</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autocomplete="given-name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="last-name">Last name</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  autocomplete="family-name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone-number">Phone number</label>
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  autocomplete="tel"
+                />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  autocomplete="new-password"
+                  required
+                />
+              </div>
+              <div>
+                <label for="confirm-password">Confirm password</label>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  autocomplete="new-password"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="submit-field">
+              <button type="submit" class="submit-button">
+                Create Account
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section class="login-section">
+          <p>Already have an account? <a href="#">Log In</a></p>
+        </section>
+      </main>
+    </article>
+  </body>
 </html>
