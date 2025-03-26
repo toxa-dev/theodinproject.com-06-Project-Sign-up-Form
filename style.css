@@ -210,7 +210,7 @@ form button:hover {
   form .text-fields {
     justify-content: start;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 
   .main-header {
@@ -231,5 +231,11 @@ form button:hover {
 
   .main-header {
     width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  form .text-fields {
+    grid-template-columns: auto auto;
   }
 }
